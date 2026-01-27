@@ -1,0 +1,30 @@
+/* Background like image */
+.register-bg {
+  min-height: 100vh;
+  background-image: url("https://t3.ftcdn.net/jpg/05/24/13/96/360_F_524139674_MojILS1WQ1um401wM1jw5aVXIhzlleL4.jpg");
+  padding: 40px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* White card box */
+.register-box {
+  max-width: 850px;
+  background: lightblue;
+  border-radius: 18px;
+  padding: 40px 50px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Input style (minimal) */
+.form-control {
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .register-box {
+    padding: 25px 20px;
+  }
+}
