@@ -7,7 +7,7 @@ const Cart = () => {
 
   useEffect(() => {
     if (userId) {
-      axios.get(`http://localhost:4000/api/cart?userId=${userId}`) //
+      axios.get(`https://ecom-z1sw.onrender.com/api/cart?userId=${userId}`) //
         .then(res => setCartItems(res.data.items || []));
     }
   }, [userId]);

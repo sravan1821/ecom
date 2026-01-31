@@ -16,7 +16,7 @@ export default function Home() {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/api/product");
+      const res = await axios.get("https://ecom-z1sw.onrender.com/api/product");
       if (res.status === 200) setProducts(res.data);
     } catch (err) {
       console.error("Fetch Error", err);
@@ -31,7 +31,7 @@ export default function Home() {
 
     setProcessingId(productId);
     try {
-      await axios.post("http://localhost:4000/api/cart/add", 
+      await axios.post("https://ecom-z1sw.onrender.com/api/cart/add", 
         { productId, quantity: 1 }, 
         { params: { userId } }
       );
